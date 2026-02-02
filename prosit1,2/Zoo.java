@@ -9,6 +9,11 @@ public class Zoo {
         this.city = city;
         this.nbrCages = nbrCages;
     }
+    public void displayZoo() {
+        System.out.println("Zoo Name: " + name);
+        System.out.println("City: " + city);
+        System.out.println("Number of Cages: " + nbrCages);
+    }
     public static void main(String[] args) {
         
     }

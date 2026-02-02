@@ -40,5 +40,11 @@ public class ZooManagement {
         myZoo.animals[2] = dolphin;
 
         System.out.println(myZoo.name + " in " + myZoo.city + " has " + myZoo.nbrCages + " cages.");
+        myZoo.displayZoo();
+        System.out.println(myZoo) ;
+
+        System.out.println(myZoo.toString()) ;
+
+    
     }
 }
