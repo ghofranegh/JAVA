@@ -14,6 +14,10 @@ public class Zoo {
         System.out.println("City: " + city);
         System.out.println("Number of Cages: " + nbrCages);
     }
+    @Override
+    public String toString() {
+        return "Zoo [Name: " + name + ", City: " + city + ", Cages: " + nbrCages + "]";
+    }
     public static void main(String[] args) {
         
     }

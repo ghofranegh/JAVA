@@ -44,6 +44,7 @@ public class ZooManagement {
         System.out.println(myZoo) ;
 
         System.out.println(myZoo.toString()) ;
+        System.out.println(lion);
 
     
     }

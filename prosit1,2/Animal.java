@@ -9,6 +9,10 @@ public class Animal {
         this.age = age;
         this.isMammal = isMammal;
     }
+    @Override
+    public String toString() {
+        return "Animal [Family: " + family + ", Name: " + name + ", Age: " + age + ", Mammal: " + isMammal + "]";
+    }
     public static void main(String[] args) {
         
     }
