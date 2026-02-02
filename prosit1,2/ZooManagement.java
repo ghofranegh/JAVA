@@ -31,9 +31,13 @@ public class ZooManagement {
         sc.close();
 
         Animal lion = new Animal("Felidae", "Simba", 5, true);
+        Animal eagle = new Animal("Accipitridae", "Aquila", 3, false);
+        Animal dolphin = new Animal("Delphinidae", "Flipper", 12, true);
 
         Zoo myZoo = new Zoo("Wildlife Park", "Tunis", 25);
         myZoo.animals[0] = lion;
+        myZoo.animals[1] = eagle;
+        myZoo.animals[2] = dolphin;
 
         System.out.println(myZoo.name + " in " + myZoo.city + " has " + myZoo.nbrCages + " cages.");
     }
