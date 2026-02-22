@@ -10,6 +10,7 @@ public class ZooManagement {
 
     public static void main(String[] var0) {
         Scanner var1 = new Scanner(System.in);
+        /* --- prosit 1 ---
         ZooManagement var2 = new ZooManagement();
         System.out.println("Entrez le nom du zoo :");
 
@@ -29,13 +30,13 @@ public class ZooManagement {
         }
 
         System.out.println(var2.zooName + " comporte " + var2.nbrCages + " cages");
-        var1.close();
+        */
         Animal var3 = new Animal("Felidae", "Simba", 5, true);
         Animal var4 = new Animal("Accipitridae", "Aquila", 3, false);
         Animal var5 = new Animal("Delphinidae", "Flipper", 12, true);
         Zoo var6 = new Zoo("Wildlife Park", "Tunis", 4);
 
-        System.out.println("Adding Simba: " + var6.addAnimal(var3));
+        //System.out.println("Adding Simba: " + var6.addAnimal(var3));
         System.out.println("Adding Aquila: " + var6.addAnimal(var4));
         System.out.println("Adding Flipper: " + var6.addAnimal(var5));
 
@@ -58,5 +59,13 @@ public class ZooManagement {
         System.out.println("Index of identical Simba: " + var6.searchAnimal(identicalSimba));
         */
 
+        System.out.println("First addition of Simba: " + var6.addAnimal(var3));
+        System.out.println("Second addition of Simba: " + var6.addAnimal(var3));
+
+        Animal var7 = new Animal("Felidae", "Simba", 3, true);
+        System.out.println("Addition of another animal named Simba: " + var6.addAnimal(var7));
+        var6.displayAnimals();
+
+        var1.close();
     }
 }

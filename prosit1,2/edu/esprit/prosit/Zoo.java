@@ -16,12 +16,19 @@ public class Zoo {
     }
 
     public boolean addAnimal(Animal animal) {
-        if (nbrAnimaux < 25) {
-            animals[nbrAnimaux] = animal;
-            nbrAnimaux++;
-            return true;
+        if (nbrAnimaux >= 25) {
+            System.out.println("Error: The zoo is full.");
+            return false;
         }
-        return false;
+
+        if (searchAnimal(animal) != -1) {
+            System.out.println("Error: Animal '" + animal.name + "' already exists in the zoo.");
+            return false;
+        }
+
+        animals[nbrAnimaux] = animal;
+        nbrAnimaux++;
+        return true;
     }
 
     public void displayAnimals() {
