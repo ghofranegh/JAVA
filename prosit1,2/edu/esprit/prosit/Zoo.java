@@ -46,6 +46,19 @@ public class Zoo {
         return -1;
     }
 
+    public boolean removeAnimal(Animal animal) {
+        int index = searchAnimal(animal);
+        if (index == -1) {
+            return false;
+        }
+        for (int i = index; i < nbrAnimaux - 1; i++) {
+            animals[i] = animals[i + 1];
+        }
+        animals[nbrAnimaux - 1] = null;
+        nbrAnimaux--;
+        return true;
+    }
+
     public void displayZoo() {
         System.out.println("Zoo Name: " + name);
         System.out.println("City: " + city);

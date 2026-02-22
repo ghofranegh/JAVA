@@ -36,7 +36,7 @@ public class ZooManagement {
         Animal var5 = new Animal("Delphinidae", "Flipper", 12, true);
         Zoo var6 = new Zoo("Wildlife Park", "Tunis", 4);
 
-        //System.out.println("Adding Simba: " + var6.addAnimal(var3));
+        System.out.println("Adding Simba: " + var6.addAnimal(var3));
         System.out.println("Adding Aquila: " + var6.addAnimal(var4));
         System.out.println("Adding Flipper: " + var6.addAnimal(var5));
 
@@ -58,7 +58,7 @@ public class ZooManagement {
         Animal identicalSimba = new Animal("Felidae", "Simba", 5, true);
         System.out.println("Index of identical Simba: " + var6.searchAnimal(identicalSimba));
         */
-
+        /* in12
         System.out.println("First addition of Simba: " + var6.addAnimal(var3));
         System.out.println("Second addition of Simba: " + var6.addAnimal(var3));
 
@@ -67,5 +67,15 @@ public class ZooManagement {
         var6.displayAnimals();
 
         var1.close();
+
+         */
+
+        /* in13
+        System.out.println("\nRemoving " + var5.name + " : " + var6.removeAnimal(var5));
+        System.out.println("\n--- After Removal ---");
+        var6.displayAnimals();
+         */
+
+
     }
 }
