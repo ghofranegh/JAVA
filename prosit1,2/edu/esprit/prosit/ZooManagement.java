@@ -66,8 +66,6 @@ public class ZooManagement {
         System.out.println("Addition of another animal named Simba: " + var6.addAnimal(var7));
         var6.displayAnimals();
 
-        var1.close();
-
          */
 
         /* in13
@@ -75,6 +73,7 @@ public class ZooManagement {
         System.out.println("\n--- After Removal ---");
         var6.displayAnimals();
          */
+        /*
         Zoo myZoo = new Zoo("Wildlife Park", "Tunis");
         Zoo otherZoo = new Zoo("Safari Club", "Enfidha");
 
@@ -93,6 +92,14 @@ public class ZooManagement {
         myZoo.displayZoo();
         otherZoo.displayZoo();
 
+         */
+        Animal a1 = new Animal("Felidae", "Simba", -5, true);
+        Zoo myZoo = new Zoo("", "Tunis");
+        System.out.println(a1);
+        System.out.println(myZoo);
+        myZoo.addAnimal(a1);
+        myZoo.displayAnimals();
+        var1.close();
 
     }
 }

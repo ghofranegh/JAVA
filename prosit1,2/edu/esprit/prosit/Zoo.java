@@ -2,16 +2,33 @@ package edu.esprit.prosit;
 
 public class Zoo {
 
-    String name;
-    final int nbrCages = 25;
-    String city;
-    Animal[] animals ;
-    int nbrAnimaux = 0;
+    private String name;
+    private final int nbrCages = 25;
+    private String city;
+    private Animal[] animals ;
+    private int nbrAnimaux = 0;
 
     public Zoo(String name, String city) {
         this.animals = new Animal[25];
-        this.name = name;
+        setName(name);
         this.city = city;
+    }
+    public String getName() { return name; }
+
+    public void setName(String name) {
+        if (name == null || name.trim().isEmpty()) {
+            System.out.println("Le nom du Zoo ne doit pas être vide. Nom par défaut appliqué.");
+            this.name = "MonZoo";
+        } else {
+            this.name = name;
+        }
+    }
+
+    public String getCity() { return city; }
+    public void setCity(String city) { this.city = city; }
+    public int getNbrAnimaux() { return nbrAnimaux; }
+    public boolean isZooFull() {
+        return nbrAnimaux >= nbrCages;
     }
 
     public boolean addAnimal(Animal animal) {
@@ -20,7 +37,7 @@ public class Zoo {
             return false;
         }
         if (searchAnimal(animal) != -1) {
-            System.out.println("Error: Animal '" + animal.name + "' already exists.");
+            System.out.println("Error: Animal '" + animal.getName() + "' already exists.");
             return false;
         }
         animals[nbrAnimaux] = animal;
@@ -34,9 +51,7 @@ public class Zoo {
             System.out.println("- " + animals[i]);
         }
     }
-    public boolean isZooFull() {
-        return nbrAnimaux >= nbrCages;
-    }
+
     public static Zoo compareZoo(Zoo z1, Zoo z2) {
         if (z1.nbrAnimaux > z2.nbrAnimaux) {
             return z1;
@@ -45,7 +60,7 @@ public class Zoo {
     }
     public int searchAnimal(Animal animal) {
         for (int i = 0; i < nbrAnimaux; i++) {
-            if (animals[i].name.equals(animal.name)) {
+            if (animals[i].getName().equals(animal.getName())){
                 return i;
             }
         }
