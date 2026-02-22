@@ -34,7 +34,7 @@ public class ZooManagement {
         Animal var3 = new Animal("Felidae", "Simba", 5, true);
         Animal var4 = new Animal("Accipitridae", "Aquila", 3, false);
         Animal var5 = new Animal("Delphinidae", "Flipper", 12, true);
-        Zoo var6 = new Zoo("Wildlife Park", "Tunis", 4);
+        Zoo var6 = new Zoo("Wildlife Park", "Tunis");
 
         System.out.println("Adding Simba: " + var6.addAnimal(var3));
         System.out.println("Adding Aquila: " + var6.addAnimal(var4));

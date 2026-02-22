@@ -3,20 +3,19 @@ package edu.esprit.prosit;
 public class Zoo {
 
     String name;
-    int nbrCages;
+    final int nbrCages = 25;
     String city;
     Animal[] animals ;
     int nbrAnimaux = 0;
 
-    public Zoo(String name, String city, int nbrCages) {
+    public Zoo(String name, String city) {
         this.animals = new Animal[25];
         this.name = name;
         this.city = city;
-        this.nbrCages = nbrCages;
     }
 
     public boolean addAnimal(Animal animal) {
-        if (nbrAnimaux >= 25) {
+        if (nbrAnimaux >= nbrCages) {
             System.out.println("Error: The zoo is full.");
             return false;
         }
