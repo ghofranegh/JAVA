@@ -7,6 +7,7 @@ public class ZooManagement {
     int nbrCages;
     String zooName;
 
+
     public static void main(String[] var0) {
         Scanner var1 = new Scanner(System.in);
         ZooManagement var2 = new ZooManagement();
@@ -32,14 +33,23 @@ public class ZooManagement {
         Animal var3 = new Animal("Felidae", "Simba", 5, true);
         Animal var4 = new Animal("Accipitridae", "Aquila", 3, false);
         Animal var5 = new Animal("Delphinidae", "Flipper", 12, true);
-        Zoo var6 = new Zoo("Wildlife Park", "Tunis", 25);
-        var6.animals[0] = var3;
-        var6.animals[1] = var4;
-        var6.animals[2] = var5;
-        System.out.println(var6.name + " in " + var6.city + " has " + var6.nbrCages + " cages.");
-        var6.displayZoo();
-        System.out.println(var6);
-        System.out.println(var6.toString());
-        System.out.println(var3);
+        Zoo var6 = new Zoo("Wildlife Park", "Tunis", 4);
+
+        System.out.println("Adding Simba: " + var6.addAnimal(var3));
+        System.out.println("Adding Aquila: " + var6.addAnimal(var4));
+        System.out.println("Adding Flipper: " + var6.addAnimal(var5));
+
+
+        for(int i = 0; i < 25; i++) {
+            boolean result = var6.addAnimal(new Animal("Family" + i, "Animal" + i, 1, true));
+            if (!result) {
+                System.out.println("Zoo is full! Cannot add Animal " + i);
+            }
+        }
+
+        //System.out.println(var6.name + " in " + var6.city + " has " + var6.nbrCages + " cages.");
+        //var6.displayZoo();
+        //System.out.println(var6);
+        //System.out.println(var3);
     }
 }
