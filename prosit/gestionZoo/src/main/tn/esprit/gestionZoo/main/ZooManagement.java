@@ -104,12 +104,16 @@ public class ZooManagement {
         myZoo.displayAnimals();
 
          */
+
         Aquatic aquatic = new Aquatic();
         Terrestrial terrestrial = new Terrestrial();
         Dolphin dolphin = new Dolphin();
         Penguin penguin = new Penguin();
 
-        System.out.println("All objects instantiated successfully using default constructors.");
+        System.out.println(aquatic);
+        System.out.println(terrestrial);
+        System.out.println(dolphin);
+        System.out.println(penguin);
 
 
         var1.close();
