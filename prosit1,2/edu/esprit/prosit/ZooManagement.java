@@ -75,6 +75,23 @@ public class ZooManagement {
         System.out.println("\n--- After Removal ---");
         var6.displayAnimals();
          */
+        Zoo myZoo = new Zoo("Wildlife Park", "Tunis");
+        Zoo otherZoo = new Zoo("Safari Club", "Enfidha");
+
+        Animal lion = new Animal("Felidae", "Simba", 5, true);
+        Animal tiger = new Animal("Felidae", "Sher Khan", 8, true);
+        Animal eagle = new Animal("Accipitridae", "Aquila", 3, false);
+
+        myZoo.addAnimal(lion);
+        myZoo.addAnimal(tiger);
+        otherZoo.addAnimal(eagle);
+
+        System.out.println("Is myZoo full? " + myZoo.isZooFull());
+
+        Zoo biggerZoo = Zoo.compareZoo(myZoo, otherZoo);
+        System.out.println("The bigger zoo is: " + biggerZoo.name + " with " + biggerZoo.nbrAnimaux + " animals.");
+        myZoo.displayZoo();
+        otherZoo.displayZoo();
 
 
     }

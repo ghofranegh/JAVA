@@ -15,16 +15,14 @@ public class Zoo {
     }
 
     public boolean addAnimal(Animal animal) {
-        if (nbrAnimaux >= nbrCages) {
+        if (isZooFull()) {
             System.out.println("Error: The zoo is full.");
             return false;
         }
-
         if (searchAnimal(animal) != -1) {
-            System.out.println("Error: Animal '" + animal.name + "' already exists in the zoo.");
+            System.out.println("Error: Animal '" + animal.name + "' already exists.");
             return false;
         }
-
         animals[nbrAnimaux] = animal;
         nbrAnimaux++;
         return true;
@@ -35,6 +33,15 @@ public class Zoo {
         for (int i = 0; i < nbrAnimaux; i++) {
             System.out.println("- " + animals[i]);
         }
+    }
+    public boolean isZooFull() {
+        return nbrAnimaux >= nbrCages;
+    }
+    public static Zoo compareZoo(Zoo z1, Zoo z2) {
+        if (z1.nbrAnimaux > z2.nbrAnimaux) {
+            return z1;
+        }
+        return z2;
     }
     public int searchAnimal(Animal animal) {
         for (int i = 0; i < nbrAnimaux; i++) {
