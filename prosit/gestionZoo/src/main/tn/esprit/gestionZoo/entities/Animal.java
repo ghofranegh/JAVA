@@ -29,7 +29,7 @@ public class Animal {
     }
 
     public String toString() {
-        return "Animal [Family: " + this.family + ", Name: " + this.name + ", Age: " + this.age + ", Mammal: " + this.isMammal + "]";
+        return "Animal : Family: " + this.family + ", Name: " + this.name + ", Age: " + this.age + ", Mammal: " + this.isMammal ;
     }
 
     public static void main(String[] var0) {
