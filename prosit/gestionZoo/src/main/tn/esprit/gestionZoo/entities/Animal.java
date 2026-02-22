@@ -1,10 +1,12 @@
-package tn.esprit.gestionZoo.entities;
+package main.tn.esprit.gestionZoo.entities;
 
 public class Animal {
     private String family;
     private String name;
     private int age;
     private boolean isMammal;
+
+    public Animal() {}
 
     public Animal(String var1, String var2, int var3, boolean var4) {
         this.family = var1;

@@ -1,7 +1,5 @@
-package tn.esprit.gestionZoo.main;
-import tn.esprit.gestionZoo.entities.Animal;
-import tn.esprit.gestionZoo.entities.Zoo;
-
+package main.tn.esprit.gestionZoo.main;
+import main.tn.esprit.gestionZoo.entities.*;
 import java.util.Scanner;
 
 
@@ -34,6 +32,7 @@ public class ZooManagement {
 
         System.out.println(var2.zooName + " comporte " + var2.nbrCages + " cages");
         */
+        /*
         Animal var3 = new Animal("Felidae", "Simba", 5, true);
         Animal var4 = new Animal("Accipitridae", "Aquila", 3, false);
         Animal var5 = new Animal("Delphinidae", "Flipper", 12, true);
@@ -42,7 +41,7 @@ public class ZooManagement {
         System.out.println("Adding Simba: " + var6.addAnimal(var3));
         System.out.println("Adding Aquila: " + var6.addAnimal(var4));
         System.out.println("Adding Flipper: " + var6.addAnimal(var5));
-
+         */
         /*
         for(int i = 0; i < 25; i++) {
             boolean result = var6.addAnimal(new Animal("Family" + i, "Animal" + i, 1, true));
@@ -105,6 +104,12 @@ public class ZooManagement {
         myZoo.displayAnimals();
 
          */
+        Aquatic aquatic = new Aquatic();
+        Terrestrial terrestrial = new Terrestrial();
+        Dolphin dolphin = new Dolphin();
+        Penguin penguin = new Penguin();
+
+        System.out.println("All objects instantiated successfully using default constructors.");
 
 
         var1.close();

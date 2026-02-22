@@ -1,4 +1,4 @@
-package tn.esprit.gestionZoo.entities;
+package main.tn.esprit.gestionZoo.entities;
 
 public class Zoo {
 
