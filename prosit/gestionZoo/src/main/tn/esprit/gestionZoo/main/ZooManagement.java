@@ -116,6 +116,15 @@ public class ZooManagement {
         System.out.println(penguin);
 
  */
+        Aquatic aqua = new Aquatic("Fish", "Shark", 5, false, "Ocean");
+        Terrestrial terr = new Terrestrial("Bovidae", "Goat", 2, true, 4);
+        Dolphin dolph = new Dolphin("Delphinidae", "Flipper", 12, true, "Ocean", 30.5f);
+        Penguin peng = new Penguin("Spheniscidae", "Pingu", 4, false, "Ice", 150.0f);
+
+        System.out.println(aqua);
+        System.out.println(terr);
+        System.out.println(dolph);
+        System.out.println(peng);
 
         var1.close();
 
