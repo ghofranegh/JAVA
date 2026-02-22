@@ -104,7 +104,7 @@ public class ZooManagement {
         myZoo.displayAnimals();
 
          */
-
+/*
         Aquatic aquatic = new Aquatic();
         Terrestrial terrestrial = new Terrestrial();
         Dolphin dolphin = new Dolphin();
@@ -115,6 +115,7 @@ public class ZooManagement {
         System.out.println(dolphin);
         System.out.println(penguin);
 
+ */
 
         var1.close();
 
