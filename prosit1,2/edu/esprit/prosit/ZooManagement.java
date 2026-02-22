@@ -39,17 +39,24 @@ public class ZooManagement {
         System.out.println("Adding Aquila: " + var6.addAnimal(var4));
         System.out.println("Adding Flipper: " + var6.addAnimal(var5));
 
-
+        /*
         for(int i = 0; i < 25; i++) {
             boolean result = var6.addAnimal(new Animal("Family" + i, "Animal" + i, 1, true));
             if (!result) {
                 System.out.println("Zoo is full! Cannot add Animal " + i);
             }
-        }
+        }*/
+        /*
+        System.out.println(var6.name + " in " + var6.city + " has " + var6.nbrCages + " cages.");
+        var6.displayZoo();
+        System.out.println(var6);
+        System.out.println(var3);*/
+        /*
+        var6.displayAnimals();
+        System.out.println("Index of Simba: " + var6.searchAnimal(var3));
+        Animal identicalSimba = new Animal("Felidae", "Simba", 5, true);
+        System.out.println("Index of identical Simba: " + var6.searchAnimal(identicalSimba));
+        */
 
-        //System.out.println(var6.name + " in " + var6.city + " has " + var6.nbrCages + " cages.");
-        //var6.displayZoo();
-        //System.out.println(var6);
-        //System.out.println(var3);
     }
 }

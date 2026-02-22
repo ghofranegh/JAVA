@@ -24,6 +24,21 @@ public class Zoo {
         return false;
     }
 
+    public void displayAnimals() {
+        System.out.println("List of animals in " + name + ":");
+        for (int i = 0; i < nbrAnimaux; i++) {
+            System.out.println("- " + animals[i]);
+        }
+    }
+    public int searchAnimal(Animal animal) {
+        for (int i = 0; i < nbrAnimaux; i++) {
+            if (animals[i].name.equals(animal.name)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public void displayZoo() {
         System.out.println("Zoo Name: " + name);
         System.out.println("City: " + city);
