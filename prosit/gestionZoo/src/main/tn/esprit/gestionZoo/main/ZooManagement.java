@@ -126,6 +126,10 @@ public class ZooManagement {
         System.out.println(dolph);
         System.out.println(peng);
 
+        aqua.swim();  // Affiche: This aquatic animal is swimming.
+        dolph.swim();
+        peng.swim();
+
         var1.close();
 
     }
