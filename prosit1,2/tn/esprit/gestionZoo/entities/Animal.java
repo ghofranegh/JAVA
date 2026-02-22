@@ -1,4 +1,4 @@
-package edu.esprit.prosit;
+package tn.esprit.gestionZoo.entities;
 
 public class Animal {
     private String family;

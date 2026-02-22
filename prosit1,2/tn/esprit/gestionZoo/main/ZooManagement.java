@@ -1,4 +1,7 @@
-package edu.esprit.prosit;
+package tn.esprit.gestionZoo.main;
+import tn.esprit.gestionZoo.entities.Animal;
+import tn.esprit.gestionZoo.entities.Zoo;
+
 import java.util.Scanner;
 
 
@@ -93,12 +96,17 @@ public class ZooManagement {
         otherZoo.displayZoo();
 
          */
+        /*
         Animal a1 = new Animal("Felidae", "Simba", -5, true);
         Zoo myZoo = new Zoo("", "Tunis");
         System.out.println(a1);
         System.out.println(myZoo);
         myZoo.addAnimal(a1);
         myZoo.displayAnimals();
+
+         */
+
+
         var1.close();
 
     }
